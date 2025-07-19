@@ -3,5 +3,5 @@ import { redirect } from 'next/navigation';
 
 export default function AdminPage() {
   // إعادة توجيه إلى لوحة التحكم افتراضياً
-  redirect('/login');
+  redirect('/revenue-review/dashboard');
 }
