@@ -32,4 +32,9 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   }
+  "scripts": {
+  "dev": "node server.js",
+  "build": "next build",
+  "start": "NODE_ENV=production node server.js"
+}
 }
