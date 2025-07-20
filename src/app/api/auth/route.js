@@ -4,7 +4,8 @@ import { NextResponse } from 'next/server';
 
 // تكوين اتصال قاعدة البيانات
 const dbConfig = {
-  host: "sql308.infinityfree.com",
+  port: "21",
+  host: "ftpupload.net",
   user: "if0_38114427",
   password: "hhhhhsssss12345",
   database: "if0_38114427_a1"
