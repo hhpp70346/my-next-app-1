@@ -62,7 +62,7 @@ export default function LoginPage() {
     // Fetch branches
     const fetchBranches = async () => {
       try {
-        const res = await fetch("https://g11.ct.ws/route.php", {
+        const res = await fetch("/api/auth", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ action: "getBranches" }),
@@ -92,7 +92,7 @@ export default function LoginPage() {
 
     const fetchUsers = async () => {
       try {
-        const res = await fetch("https://g11.ct.ws/route.php", {
+        const res = await fetch("/api/auth", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -121,7 +121,7 @@ export default function LoginPage() {
     setLoading(true)
 
     try {
-      const res = await fetch("https://g11.ct.ws/route.php", {
+      const res = await fetch("/api/auth", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
