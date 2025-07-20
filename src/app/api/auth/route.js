@@ -4,11 +4,10 @@ import { NextResponse } from 'next/server';
 
 // تكوين اتصال قاعدة البيانات
 const dbConfig = {
-  host: "sql308.infinityfree.com",
-  user: "if0_38114427",
-  password: "hhhhhsssss12345",
-  database: "if0_38114427_a1"
-};
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "A1"
 
 export async function POST(request) {
   const { action, ...data } = await request.json();
